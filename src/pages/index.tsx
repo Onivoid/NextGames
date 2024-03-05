@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Canva from "@/components/game/Canva";
+import SnakeGame from "@/components/game/SnakeGame";
 import { useState } from "react";
 import Style from "@/styles/Home.module.css";
 
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <div className={Style.container}>
         <p>Score : {score}</p>
-        <Canva setScore={setScore} score={score}/>
+        <SnakeGame setScore={setScore} score={score}/>
       </div>
     </>
   );
