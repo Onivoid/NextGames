@@ -1,0 +1,50 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(28, 1fr);
+  grid-template-rows: repeat(28, 1fr);
+  gap: 5px;
+  width: calc(28 * 25px);
+  height: calc(28 * 25px);
+  &:hover{
+    cursor: none;
+  }
+  *{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-900);
+    border-radius: 2px;
+    opacity: 0.3;
+    transition: all .3s ease-in 0s;
+    &:hover{
+      background-color: var(--primary-100);
+      opacity: 1;
+      transition: opacity 0s ease-out 0s;
+    }
+  }
+  .food{
+    opacity: 0.8;
+    transition: opacity 0s ease-out 0s;
+    animation: breathe 1s infinite;
+  }
+  .snake{
+    background-color: var(--primary-500);
+    opacity: 0.8;
+    transition: opacity 0s ease-out 0s;
+    box-shadow: 0 0 5px var(--primary-500);
+  }
+}
+
+@keyframes breathe {
+  0%{
+    background-color: var(--teal-500);
+    box-shadow: 0 0 5px var(--teal-200);
+  }
+  50%{
+    background-color: var(--teal-300);
+    box-shadow: 0 0 10px var(--teal-200);
+  }
+  100%{
+    background-color: var(--teal-500);
+    box-shadow: 0 0 5px var(--teal-200);
+  }
+}
