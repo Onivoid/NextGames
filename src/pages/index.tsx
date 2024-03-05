@@ -1,7 +1,7 @@
 import Head from "next/head";
 import SnakeGame from "@/components/game/SnakeGame";
 import { useState } from "react";
-import Style from "@/styles/Home.module.css";
+import Style from "@/styles/pages/Home.module.scss";
 
 export default function Home() {
   const [score, setScore] = useState(0);

@@ -1,4 +1,4 @@
-import Style from '@/styles/game/Canva.module.scss';
+import Style from '@/styles/game/SnakeGame.module.scss';
 import { useEffect, useState } from 'react';
 
 /** 

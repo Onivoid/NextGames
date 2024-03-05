@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/styles/global/globals.scss";
 import "primereact/resources/themes/lara-dark-indigo/theme.css";
 import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.css';
