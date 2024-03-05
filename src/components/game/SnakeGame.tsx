@@ -1,4 +1,4 @@
-import Style from '@/styles/game/SnakeGame.module.scss';
+import Style from '@/styles/components/SnakeGame.module.scss';
 import { useEffect, useState } from 'react';
 
 /** 
@@ -27,7 +27,7 @@ const createGrid = (rows: number, cols: number) => {
  */
 export default function SnakeGame({score, setScore}: {score: number, setScore: (value: number) => void}) {
 
-  const [grid, setGrid] = useState(createGrid(28, 28)); // Création de la grille
+  const [grid, setGrid] = useState(createGrid(16, 28)); // Création de la grille
   const [direction, setDirection] = useState({ dx: 1, dy: 0 }); // Direction du serpent
   const [snake, setSnake] = useState([{ x: 0, y: 8 }]); // Position du serpent
   const [food, setFood] = useState<{ x: number; y: number;} | null>(null); // Position de la nourriture
